@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo Liquido</title>
+    <link rel="icon" href="img/Coexistência.ico">
+    <link rel="stylesheet" href="css/sueldo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/sueldo.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="icon">
+            <img class="img" src="img/descarga.png" alt="">
+            <a href="https://www.facebook.com/" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://twitter.com/home" class="X"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="youtube"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://gt.linkedin.com/" class="likedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </header>
+    <nav>
+        <div class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="sueldo.html">Sueldo Líquido</a>
+            <a href="indemnizacion.html">Indemnización</a>
+        </div>
+    </nav>
+    <div class="main">
+        <main>
+            <div class="box box1">
+                <h2>Calculadora de Salario Total</h2>
+                <div class="form-group">
+                    <label for="salario">Salario:</label>
+                    <input type="number" id="salario">
+                </div>
+                <div class="form-group">
+                    <label for="bonificacion">Bonificación:</label>
+                    <input type="number" id="bonificacion">
+                </div>
+                <div class="form-group">
+                    <label for="comisiones">Comisiones:</label>
+                    <input type="number" id="comisiones">
+                </div>
+                <button onclick="calcularSalarioTotal()">Calcular</button>
+                <div class="result" id="resultado"></div>
+            </div>
+
+               <div class="box box2">
+        <h2>Calculadora de Ahorro, IGSS y Préstamos</h2>
+        <div class="form-group">
+            <label for="ahorro">Ahorro:</label>
+            <input type="number" id="ahorro">
+        </div>
+        <div class="form-group">
+            <label for="igss">IGSS:</label>
+            <input type="number" id="igss">
+        </div>
+        <div class="form-group">
+            <label for="prestamos">Préstamos:</label>
+            <input type="number" id="prestamos">
+        </div>
+        <button onclick="calcularDeducciones()">Calcular</button>
+        <div class="result" id="deducciones"></div>
+    </div>
+    <div class="box box3">
+    <button onclick="sumarResultados()" style="display: block; margin: 20px auto;">Sumar Resultados</button>
+    
+    <div class="result" id="total"></div>
+    </div>
+        </main>
+        <aside class="right">
+            <center><img class="image" src="img/emX3enWZ_400x400.png" alt=""></center>
+        </aside>
+    </div>
+</body>
+
+</html>
